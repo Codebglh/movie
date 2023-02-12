@@ -1,0 +1,47 @@
+.bg {
+    // background-color: antiquewhite;
+    height: 80px;
+    // border: 2px solid;
+    // border-color: blue;
+    // border-radius: 10px;
+    // display: -webkit-flex;
+   display: flex;
+    width: auto;
+
+    #icon {
+        height: 80px;
+        border: 1px solid;
+        border-color: antiquewhite;
+        width: 10%;
+    }
+
+    #daohang {
+        height: 80px;
+        border: 1px solid;
+        border-color: antiquewhite;
+        width: 80%;
+        
+        
+        ul{
+            list-style-type: none;
+            display: flex;
+            height: 80px;
+            padding-left: 800px;
+        //    line-height:0ch;
+            li{  
+
+                text-align: center;
+                // border: 1px solid;
+                width: 60px;
+                padding-top: 26px;
+            }
+        }
+    }
+
+    #search {
+        height: 80px;
+        border: 1px solid;
+        border-color: antiquewhite;
+        width: 10%;
+    }
+}
