@@ -1,10 +1,13 @@
-import Header from './components/header'
-
+// import Header from './components/header'
+// import Aaa from './components/connect/index'
+import ASS from './components/connect/index1'
 function App() {
   return (
    
    <div className="App">
-   <Header/>
+   <ASS />
+   {/* <Header/> */}
+   {/* <Aaa/> */}
     </div>
   );
 }

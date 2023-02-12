@@ -1,15 +1,29 @@
-// get();
+
 import React from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 export default function index() {
-    return <div>index {get()
+    return <div>index {getcontent()
     }</div>;
 }
-function get() {
-  
-    console.log('ssa');
+
+
+     function getcontent(){
+        console.log(1231)
+        
+        axios({
+          url: "/api2/toplist",
+          method: "get",
+          data: {},
+        }).then((res) => {
+          console.log(res.data);
+        //   this.setState({
+        //     getdata: res.data,
+        //   });
+
+    })
 }
+
 
 
 

@@ -16,21 +16,19 @@ df1
     );
   }
   componentDidMount() {
+    console.log(123)
     this.getcontent();
   }
+  
   getcontent = () => {
+    console.log(1231)
     axios({
-      url: "/api1/api.php/provide/vod/?ac=videolist",
-      method: "get",
+      url: "/api1/api.php/provide/vod",
+      method: "post",
       data: {
-        // catid: 2, //catid 为电影类型例如：1电影、2电视剧、3动漫、4宗亿
-        // size: 2, //返回数据多少
-        // pageno: 1, //页数
-        // rank: "ranklatest", //
-        // cat: "言情", //类型
-        // area: "内地", //地区
-        // year: "2022", //年代
-        // act: "杨幂", //演员
+        ac:"videolist",
+        wd:"狂飙"
+       
       },
     }).then((res) => {
       console.log(res.data);
@@ -38,5 +36,17 @@ df1
         getdata: res.data,
       });
     });
+    // axios({
+    //   url: "/api2/v1/filter/list",
+    //   method: "get",
+    //   data: {
+       
+    //   },
+    // }).then((res) => {
+    //   console.log(res.data);
+    //   this.setState({
+    //     getdata: res.data,
+    //   });
+    // });
   };
 }
